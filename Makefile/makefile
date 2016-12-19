@@ -1,6 +1,7 @@
 CXX=avr-g++
 
-ARDUINO_DIR=/opt/arduino-1.0.5
+ARDUINO_DIR=/home/gionata/workspace_Arduino/Core/ArduinoCore/
+STL_DIR=/home/gionata/workspace_Arduino/Libraries/AVR-STL/include/
 LIB_DIR=..
 
 # avr tools path
@@ -15,10 +16,7 @@ CPU_SPEED=16000000UL
 
 
 # Include (dependencies: avr-stl, arduino)
-INCLUDE=-I$(LIB_DIR)\
--I$(ARDUINO_DIR)/hardware/tools/avr/avr-stl/include\
--I$(ARDUINO_DIR)/hardware/arduino/variants/standard\
--I$(ARDUINO_DIR)/hardware/arduino/cores/arduino
+INCLUDE=-I$(LIB_DIR) -I$(STL_DIR) -I$(ARDUINO_DIR)
 
 
 # Source objects and library name
