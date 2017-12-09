@@ -3,6 +3,8 @@
 	<name>DisplayGroup</name>
 	<comment></comment>
 	<projects>
+		<project>ATMegaCore</project>
+		<project>AVR-STL</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
